@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Converter	lib/libreconv.rb	/^  class Converter$/;"	c	class:Libreconv
+Libreconv	lib/libreconv.rb	/^module Libreconv$/;"	m
+Libreconv	lib/libreconv/version.rb	/^module Libreconv$/;"	m
+check_source_type	lib/libreconv.rb	/^    def check_source_type$/;"	f	class:Libreconv.Converter
+convert	lib/libreconv.rb	/^    def convert$/;"	f	class:Libreconv.Converter
+convert	lib/libreconv.rb	/^  def self.convert(source, target, soffice_command = nil, convert_to = nil)$/;"	F	class:Libreconv
+determine_soffice_command	lib/libreconv.rb	/^    def determine_soffice_command$/;"	f	class:Libreconv.Converter
+file_path	spec/spec_helper.rb	/^def file_path( *paths )$/;"	f
+initialize	lib/libreconv.rb	/^    def initialize(source, target, soffice_command = nil, convert_to = nil)$/;"	f	class:Libreconv.Converter
+which	lib/libreconv.rb	/^    def which(cmd)$/;"	f	class:Libreconv.Converter
