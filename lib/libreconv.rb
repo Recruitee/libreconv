@@ -34,14 +34,14 @@ module Libreconv
         begin
           status = Timeout.timeout(10) do
             Process.waitpid(pid)
+            target_tmp_file = "#{target_path}/#{File.basename(@source, ".*")}.#{File.basename(@convert_to, ":*")}"
+            FileUtils.cp target_tmp_file, @target
           end
         rescue Timeout::Error
           Process.kill(:SIGKILL, pid)
           Process.detach(pid)
         end
         # $stdout.reopen orig_stdout
-        target_tmp_file = "#{target_path}/#{File.basename(@source, ".*")}.#{File.basename(@convert_to, ":*")}"
-        FileUtils.cp target_tmp_file, @target
       }
     end
 
